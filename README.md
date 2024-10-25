@@ -34,11 +34,11 @@ This project uses **AWS Lambda** to automatically organize files uploaded to an 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-repo/aws-lambda-s3-file-organizer.git
+    git clone https://github.com/tanvir4hmed/s3-file-organizer.git
     ```
 2. **Navigate to the project directory**:
     ```bash
-    cd aws-lambda-s3-file-organizer
+    cd s3-file-organizer
     ```
 3. **Update the variables** in `variables.tf` to match your environment.
 
@@ -51,24 +51,10 @@ This project uses **AWS Lambda** to automatically organize files uploaded to an 
 5. **Test the Lambda Function**:
    Upload a file to the S3 bucket, and it will be automatically moved to the `Year/Month/Day` structure.
 
-## Variables
 
-- **`bucket_name`**: Name of the S3 bucket where files will be uploaded.
-- **`lambda_role_arn`**: The IAM role ARN for the Lambda execution.
+---
 
-## Outputs
+**Thank you for using the _s3-file-organizer_!** If you have any questions or feedback, feel free to open an [issue](https://github.com/tanvir4hmed/s3-file-organizer/issues) or reach out. **Contributions are welcome!**
 
-- **`lambda_function_arn`**: The ARN of the deployed Lambda function.
-- **`bucket_arn`**: The ARN of the S3 bucket.
 
-## Cleanup
 
-To remove all resources created by Terraform:
-
-```bash
-terraform destroy
-```
-
-## License
-
-This project is licensed under the MIT License.
